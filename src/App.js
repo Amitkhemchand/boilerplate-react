@@ -4,6 +4,7 @@ import { StyleSheet, css } from 'aphrodite';
 import SidebarComponent from './components/sidebar/SidebarComponent';
 import HeaderComponent from './components/header/HeaderComponent';
 import './App.css';
+import Tickets from './pages/tickets';
 
 const styles = StyleSheet.create({
     container: {
@@ -39,7 +40,7 @@ class App extends React.Component {
                 <Column flexGrow={1} className={css(styles.mainBlock)}>
                     <HeaderComponent title={selectedItem} />
                     <div className={css(styles.content)}>
-                        <span>Content</span>
+                        <Tickets />
                     </div>
                 </Column>
             </Row>
